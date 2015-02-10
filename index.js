@@ -4,7 +4,7 @@
 var notifier = require('./lib/notify');
 
 module.exports = {
-  name: 'ember-cli-notify',
+  name: 'ember-cli-build-notifications',
 
   buildError: function(error) {
     notifier.notify({

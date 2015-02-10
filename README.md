@@ -1,4 +1,4 @@
-# Ember-cli-notify
+# Ember-cli-build-notifications
 
 This library adds support for OSX Notification Center alerts when ember-cli has a buildError.
 
@@ -7,7 +7,7 @@ This library adds support for OSX Notification Center alerts when ember-cli has 
 ## Usage
 
 ```bash
-npm install --save-dev ember-cli-notify
+npm install --save-dev ember-cli-build-notifications
 ```
 
 ## Notification Platforms

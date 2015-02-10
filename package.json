@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-notify",
+  "name": "ember-cli-build-notifications",
   "version": "0.0.1",
   "description": "Notifications when ember-cli has a buildError",
   "directories": {
@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "node tests/runner.js"
   },
-  "repository": "https://github.com/pdud/ember-cli-notify",
+  "repository": "https://github.com/pdud/ember-cli-build-notifications",
   "engines": {
     "node": ">= 0.10.0"
   },
