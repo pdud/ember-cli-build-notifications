@@ -10,6 +10,12 @@ This library adds support for OSX Notification Center alerts when ember-cli has 
 npm install --save-dev ember-cli-notify
 ```
 
+## Notification Platforms
+
+#### OSX Notification Center
+
+Powered by the MIT licenced [terminal-notifier](https://github.com/alloy/terminal-notifier).
+
 ## Contributing
 
 ### Running Tests

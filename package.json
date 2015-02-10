@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-notify",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Notifications when ember-cli has a buildError",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "node tests/runner.js"
   },
-  "repository": "",
+  "repository": "https://github.com/pdud/ember-cli-notify",
   "engines": {
     "node": ">= 0.10.0"
   },
