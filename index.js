@@ -12,8 +12,7 @@ module.exports = {
       title: 'Build Failed',
       subtitle: error.file,
       message: error.toString(),
-      appIcon: path.resolve(__dirname + '/ember-logo.png'),
-      sound: true
+      appIcon: path.resolve(__dirname + '/ember-logo.png')
     });
   }
 };
