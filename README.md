@@ -1,6 +1,6 @@
 # Ember-cli-build-notifications
 
-This library adds support for OSX Notification Center alerts when ember-cli has a buildError.
+This library adds support for Linux, Mac OS X and Windows alerts when ember-cli has a buildError.
 
 ![image](example.png)
 
@@ -10,11 +10,14 @@ This library adds support for OSX Notification Center alerts when ember-cli has 
 npm install --save-dev ember-cli-build-notifications
 ```
 
-## Notification Platforms
+## Requirements
 
-#### OSX Notification Center
+- **Mac OS X**: >= 10.8 or Growl if earlier.
+- **Linux**: notify-osd installed (Ubuntu should have this by default)
+- **Windows**: >= 8, task bar balloon if earlier or Growl if that is installed.
+- **General Fallback**: Growl
 
-Powered by the MIT licenced [terminal-notifier](https://github.com/alloy/terminal-notifier).
+Powered by [mikaelbr/node-notifier](https://github.com/mikaelbr/node-notifier) and its [dependencies](https://github.com/mikaelbr/node-notifier#thanks-to-oss).
 
 ## Contributing
 
@@ -25,7 +28,6 @@ Powered by the MIT licenced [terminal-notifier](https://github.com/alloy/termina
 ## Acknowledgment
 
 * Made possible by: [https://github.com/ember-cli/ember-cli/pull/2832](https://github.com/ember-cli/ember-cli/pull/2832)
-* and [https://github.com/alloy/terminal-notifier](https://github.com/alloy/terminal-notifier)
 * Inspired by: [https://github.com/dylang/grunt-notify](https://github.com/dylang/grunt-notify)
 * Mocha setup from: [https://github.com/rwjblue/ember-cli-divshot](https://github.com/rwjblue/ember-cli-divshot)
 
