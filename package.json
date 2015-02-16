@@ -44,6 +44,6 @@
     "configPath": "tests/dummy/config"
   },
   "dependencies": {
-    "node-notifier": "^4.1.0"
+    "node-notifier": "^4.1.1"
   }
 }
