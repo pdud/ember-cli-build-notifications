@@ -1,7 +1,7 @@
 /* jshint node: true */
 'use strict';
 
-var notifier = require('./lib/notify');
+var notifier = require('node-notifier');
 
 module.exports = {
   name: 'ember-cli-build-notifications',

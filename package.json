@@ -42,5 +42,8 @@
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "dependencies": {
+    "node-notifier": "^4.1.0"
   }
 }
