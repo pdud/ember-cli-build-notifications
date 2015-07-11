@@ -7,6 +7,14 @@ var path = require('path');
 module.exports = {
   name: 'ember-cli-build-notifications',
 
+  postBuild: function(results) {
+    notifier.notify({
+      title: 'Build Succeeded',
+      message: 'Build Time: ' + Math.round(results.totalTime/1000000) + 'ms',
+      appIcon: path.resolve(__dirname + '/ember-logo.png')
+    });
+  },
+
   buildError: function(error) {
     notifier.notify({
       title: 'Build Failed',
