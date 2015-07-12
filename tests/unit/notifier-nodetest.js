@@ -20,9 +20,9 @@ describe('notifier', function() {
       toString: function() {
         return 'Something went wrong';
       }
-
     };
     var notification = notifier.notify(error, { notifier: fakeNodeNotifier });
+
     expect(notification.title).to.equal('Build Failed');
     expect(notification.subtitle).to.equal(error.file);
     expect(notification.message).to.equal(error.toString());
