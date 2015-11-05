@@ -13,5 +13,13 @@ module.exports = {
     if (config.buildError.notify) {
       notifier.notify(error);
     }
+  },
+
+  postBuild: function(results) {
+    var config = Config.load(this.project.root);
+
+    if (config.buildSuccess.notify) {
+      notifier.buildSuccess(results);
+    }
   }
 };
