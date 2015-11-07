@@ -11,7 +11,7 @@ module.exports = {
     var config = Config.load(this.project.root);
 
     if (config.buildError.notify) {
-      notifier.notify(error);
+      notifier.buildError(error);
     }
   },
 

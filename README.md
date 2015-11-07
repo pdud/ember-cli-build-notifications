@@ -1,14 +1,36 @@
 # Ember-cli-build-notifications
 
-This library adds support for Linux, Mac OS X and Windows alerts when ember-cli has a buildError.
+This library adds support for Linux, Mac OS X and Windows alerts when ember-cli has a buildError and postBuild (When build is successful).
 
 ![image](example.png)
+![image](build_success_example.png)
 
 ## Usage
 
 ```bash
 npm install --save-dev ember-cli-build-notifications
 ```
+
+## Defaults and Overrides
+
+| Config Options | Ember CLI Build Event | Default |
+| -------------- |:----------------------|:-------:|
+| buildError     | buildError            | True    |
+| buildSuccess   | postBuild             | False   |
+
+To override defaults, add the following to the config file `{app}/config/build-notification.js`:
+
+```
+module.exports = {
+  buildError: {
+    notify: true
+  },
+  buildSuccess: {
+    notify: true
+  }
+};
+```
+
 
 ## Requirements
 

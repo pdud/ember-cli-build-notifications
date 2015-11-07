@@ -21,7 +21,7 @@ describe('notifier', function() {
         return 'Something went wrong';
       }
     };
-    var notification = notifier.notify(error, { notifier: fakeNodeNotifier });
+    var notification = notifier.buildError(error, { notifier: fakeNodeNotifier });
 
     expect(notification.title).to.equal('Build Failed');
     expect(notification.subtitle).to.equal(error.file);
