@@ -18,7 +18,7 @@ npm install --save-dev ember-cli-build-notifications
 | buildError     | buildError            | True    |
 | buildSuccess   | postBuild             | False   |
 
-To override defaults, add the following to the config file `{app}/config/build-notification.js`:
+To override defaults, add the following to the config file `{app}/config/build-notifications.js`:
 
 ```
 module.exports = {
