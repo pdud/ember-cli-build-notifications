@@ -23,14 +23,21 @@ To override defaults, add the following to the config file `{app}/config/build-n
 ```
 module.exports = {
   buildError: {
-    notify: true
+    notify: true,
+    notificationOptions: {
+      sound: true
+    }
   },
   buildSuccess: {
-    notify: true
+    notify: true,
+    notificationOptions: {
+      sound: true
+    }
   }
 };
 ```
 
+The `notificationOptions` settings are passed directly into node-notifier, see their [docs](https://github.com/mikaelbr/node-notifier#all-notification-options-with-their-defaults) for a full list of available settings
 
 ## Requirements
 
