@@ -11,7 +11,7 @@ module.exports = {
     var config = Config.load(this.project.root);
 
     if (config.buildError.notify) {
-      notifier.buildError(error);
+      notifier.buildError(error, config.buildError.options);
     }
   },
 
@@ -19,7 +19,7 @@ module.exports = {
     var config = Config.load(this.project.root);
 
     if (config.buildSuccess.notify) {
-      notifier.buildSuccess(results);
+      notifier.buildSuccess(results, config.buildSuccess.options);
     }
   }
 };
