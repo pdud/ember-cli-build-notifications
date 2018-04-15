@@ -1,5 +1,7 @@
 # Ember-cli-build-notifications
 
+[![Build Status](https://travis-ci.org/pdud/ember-cli-build-notifications.svg?branch=master)](https://travis-ci.org/pdud/ember-cli-build-notifications)
+
 This library adds support for Linux, Mac OS X and Windows alerts when ember-cli has a buildError and postBuild (When build is successful).
 
 ![image](example.png)
@@ -52,7 +54,7 @@ Powered by [mikaelbr/node-notifier](https://github.com/mikaelbr/node-notifier) a
 
 ### Running Tests
 
-* `npm test`
+* `npm run nodetest`
 
 ## Acknowledgment
 
