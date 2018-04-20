@@ -1,7 +1,9 @@
 ember-cli-build-notifications
 ==============================================================================
 
+[![npm version](https://badge.fury.io/js/ember-cli-build-notifications.svg)](https://badge.fury.io/js/ember-cli-build-notifications)
 [![Build Status](https://travis-ci.org/pdud/ember-cli-build-notifications.svg?branch=master)](https://travis-ci.org/pdud/ember-cli-build-notifications)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-build-notifications.svg)](https://emberobserver.com/addons/ember-cli-build-notifications)
 
 This addon adds support for Linux, Mac OS X and Windows alerts when ember-cli has a buildError and postBuild (when the build is successful).
 
