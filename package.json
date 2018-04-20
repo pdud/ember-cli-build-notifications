@@ -7,9 +7,12 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "ember server",
     "build": "ember build",
-    "test": "mocha node-tests/**/*-test.js"
+    "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
+    "nodetest": "mocha node-tests --recursive --timeout 5000",
+    "start": "ember serve",
+    "test": "ember test",
+    "test:all": "ember try:each"
   },
   "repository": "https://github.com/pdud/ember-cli-build-notifications",
   "engines": {
