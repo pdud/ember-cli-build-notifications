@@ -47,7 +47,10 @@ describe('totalTime', function () {
         },
       };
 
-      expect(totalTime(results).replace(/\D/g, '')).to.be.within(0, 200);
+      expect(parseInt(totalTime(results).replace(/\D/g, ''))).to.be.within(
+        0,
+        200
+      );
     });
   });
 
