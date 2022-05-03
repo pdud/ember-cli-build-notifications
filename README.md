@@ -10,6 +10,14 @@ This addon adds support for Linux, Mac OS X and Windows alerts when ember-cli ha
 ![image](example.png)
 ![image](build_success_example.png)
 
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
+* Node.js v12 or above
+
+
 Installation
 ------------------------------------------------------------------------------
 
@@ -58,6 +66,7 @@ Powered by [mikaelbr/node-notifier](https://github.com/mikaelbr/node-notifier) a
 
 Contributing
 ------------------------------------------------------------------------------
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
 ### Installation
 
