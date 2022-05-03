@@ -9,7 +9,7 @@ on:
       - '*'
 
 env:
-  NODE_VERSION: '4.x'
+  NODE_VERSION: '12.x'
 
 jobs:
   lint:
@@ -42,16 +42,12 @@ jobs:
           ${{ runner.os }}-${{ env.NODE_VERSION }}-
 
     - name: Install Dependencies
-      run: |
-        npm install --global yarn@1.12.3
-        yarn install --frozen-lockfile
+      run: yarn install --frozen-lockfile
       if: |
         steps.cache-dependencies.outputs.cache-hit != 'true'
 
     - name: Lint
-      run: |
-        npm install --global yarn@1.12.3
-        yarn lint:js
+      run: yarn lint
   test:
     name: Tests
     runs-on: ubuntu-latest
@@ -59,7 +55,7 @@ jobs:
     needs: lint
     strategy:
       matrix:
-        node-version: [4.x, 6.x, 7.x]
+        node-version: [12.x, 14.x, 16.x]
     steps:
     - uses: actions/checkout@v2
       with:
@@ -86,15 +82,11 @@ jobs:
           ${{ runner.os }}-${{ matrix.node-version }}-
 
     - name: Install Dependencies
-      run: |
-        npm install --global yarn@1.12.3
-        yarn install --frozen-lockfile
+      run: yarn install --frozen-lockfile
       if: |
         steps.cache-dependencies.outputs.cache-hit != 'true'
     - name: Test
-      run: |
-        npm install --global yarn@1.12.3
-        yarn nodetest
+      run: yarn nodetest
 
   test-floating:
     name: Floating Dependencies
@@ -120,11 +112,7 @@ jobs:
           \${{ runner.os }}-\${{ env.NODE_VERSION }}-
 
     - name: Install Dependencies
-      run: |
-        npm install --global yarn@1.12.3
-        yarn install --no-lockfile --non-interactive
+      run: yarn install --no-lockfile --non-interactive
 
     - name: Test
-      run: |
-        npm install --global yarn@1.12.3
-        yarn nodetest
+      run: yarn nodetest

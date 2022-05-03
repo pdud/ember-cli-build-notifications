@@ -3,29 +3,29 @@
 const notifier = require('../../lib/notifier');
 const expect = require('chai').expect;
 
-describe('notifier', function() {
+describe('notifier', function () {
   const fakeNodeNotifier = {
     name: 'fakeNodeNotifier',
     notify(options) {
       return options;
-    }
+    },
   };
 
-  describe('buildError', function() {
-    it('sends the correct options to node-notifier', function() {
+  describe('buildError', function () {
+    it('sends the correct options to node-notifier', function () {
       notifier.nodeNotifier = fakeNodeNotifier;
       const error = {
         file: 'application.hbs',
         toString() {
           return 'Something went wrong';
-        }
+        },
       };
 
       const notification = notifier.buildError(error, {
         notifier: fakeNodeNotifier,
         notificationOptions: {
-          sound: true
-        }
+          sound: true,
+        },
       });
 
       expect(notification.title).to.equal('Build Failed');
@@ -35,20 +35,20 @@ describe('notifier', function() {
       expect(notification.sound).to.equal(true);
     });
 
-    it('allows settings in config to take precedence', function() {
+    it('allows settings in config to take precedence', function () {
       notifier.nodeNotifier = fakeNodeNotifier;
       const error = {
         file: 'application.hbs',
         toString() {
           return 'Something went wrong';
-        }
+        },
       };
 
       const notification = notifier.buildError(error, {
         notifier: fakeNodeNotifier,
         notificationOptions: {
-          subtitle: 'Test String'
-        }
+          subtitle: 'Test String',
+        },
       });
 
       expect(notification.title).to.equal('Build Failed');
@@ -56,18 +56,18 @@ describe('notifier', function() {
     });
   });
 
-  describe('buildSuccess', function() {
-    it('sends the correct options to node-notifier', function() {
+  describe('buildSuccess', function () {
+    it('sends the correct options to node-notifier', function () {
       notifier.nodeNotifier = fakeNodeNotifier;
       const results = {
-        totalTime: 121000000
+        totalTime: 121000000,
       };
 
       const notification = notifier.buildSuccess(results, {
         notifier: fakeNodeNotifier,
         notificationOptions: {
-          sound: true
-        }
+          sound: true,
+        },
       });
 
       expect(notification.title).to.equal('Build Succeeded');
@@ -76,16 +76,16 @@ describe('notifier', function() {
       expect(notification.sound).to.equal(true);
     });
 
-    it('allows settings in config to take precedence', function() {
+    it('allows settings in config to take precedence', function () {
       notifier.nodeNotifier = fakeNodeNotifier;
       const results = {
-        totalTime: 121000000
+        totalTime: 121000000,
       };
       const notification = notifier.buildSuccess(results, {
         notifier: fakeNodeNotifier,
         notificationOptions: {
-          message: 'Test String'
-        }
+          message: 'Test String',
+        },
       });
 
       expect(notification.title).to.equal('Build Succeeded');

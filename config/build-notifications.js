@@ -2,9 +2,9 @@
 
 module.exports = {
   buildError: {
-    notify: true
+    notify: true,
   },
   buildSuccess: {
-    notify: true
-  }
+    notify: true,
+  },
 };
