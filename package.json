@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-build-notifications",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Notifications when ember-cli has a buildError",
   "keywords": [
     "ember-addon"
