@@ -47,7 +47,7 @@ module.exports = {
       extends: ['plugin:node/recommended'],
     },
     {
-      files: ['node-tests/**/*.js'],
+      files: ['./config/ember-try.js', 'node-tests/**/*.js'],
       env: {
         node: true,
       },
