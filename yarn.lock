@@ -1067,6 +1067,20 @@
     semver "^7.3.5"
     typescript-memoize "^1.0.1"
 
+"@embroider/shared-internals@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@embroider/shared-internals/-/shared-internals-2.0.0.tgz#d8205ec6944362aeecfbb51143db352430ced316"
+  integrity sha512-qZ2/xky9mWm5YC6noOa6AiAwgISEQ78YTZNv4SNu2PFgEK/H+Ha/3ddngzGSsnXkVnIHZyxIBzhxETonQYHY9g==
+  dependencies:
+    babel-import-util "^1.1.0"
+    ember-rfc176-data "^0.3.17"
+    fs-extra "^9.1.0"
+    js-string-escape "^1.0.1"
+    lodash "^4.17.21"
+    resolve-package-path "^4.0.1"
+    semver "^7.3.5"
+    typescript-memoize "^1.0.1"
+
 "@embroider/test-setup@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@embroider/test-setup/-/test-setup-2.0.2.tgz#fa9e2e0dbaaba481e889875114727dd78aa280fd"
@@ -2702,25 +2716,7 @@ broccoli-funnel-reducer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/broccoli-funnel-reducer/-/broccoli-funnel-reducer-1.0.0.tgz#11365b2a785aec9b17972a36df87eef24c5cc0ea"
 
-broccoli-funnel@^2.0.0, broccoli-funnel@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/broccoli-funnel/-/broccoli-funnel-2.0.1.tgz#6823c73b675ef78fffa7ab800f083e768b51d449"
-  dependencies:
-    array-equal "^1.0.0"
-    blank-object "^1.0.1"
-    broccoli-plugin "^1.3.0"
-    debug "^2.2.0"
-    fast-ordered-set "^1.0.0"
-    fs-tree-diff "^0.5.3"
-    heimdalljs "^0.2.0"
-    minimatch "^3.0.0"
-    mkdirp "^0.5.0"
-    path-posix "^1.0.0"
-    rimraf "^2.4.3"
-    symlink-or-copy "^1.0.0"
-    walk-sync "^0.3.1"
-
-broccoli-funnel@^2.0.2:
+broccoli-funnel@^2.0.0, broccoli-funnel@^2.0.1, broccoli-funnel@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/broccoli-funnel/-/broccoli-funnel-2.0.2.tgz#0edf629569bc10bd02cc525f74b9a38e71366a75"
   integrity sha512-/vDTqtv7ipjEZQOVqO4vGDVAOZyuYzQ/EgGoyewfOgh1M7IQAToBKZI0oAQPgMBeFPPlIbfMuAngk+ohPBuaHQ==
@@ -4146,16 +4142,16 @@ ember-auto-import@^1.11.3:
     webpack "^4.43.0"
 
 ember-auto-import@^2.2.0, ember-auto-import@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.4.1.tgz#25e1c21d403eed116b21972ccc5336b49a7ca46b"
-  integrity sha512-lyCl2hzIb6Dlcmfm3gI3lAtaOk/nzR2kM4GDJRRu19YJhhSkpiIMSDVjw8ShxmnYiI005R1eOcP3C/GgRRW5mA==
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.5.0.tgz#627607648e87d154f75cd3f70c435355ef7cced9"
+  integrity sha512-fKERUmpZLn4RJiCwTjS7D5zJxgnbF4E6GiSp1GYh53K96S+5UBs06r7ScDI52rq34z0+qdSrA6qiDJ3i/lWqKg==
   dependencies:
     "@babel/core" "^7.16.7"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
     "@babel/plugin-proposal-decorators" "^7.16.7"
     "@babel/preset-env" "^7.16.7"
     "@embroider/macros" "^1.0.0"
-    "@embroider/shared-internals" "^1.0.0"
+    "@embroider/shared-internals" "^2.0.0"
     babel-loader "^8.0.6"
     babel-plugin-ember-modules-api-polyfill "^3.5.0"
     babel-plugin-htmlbars-inline-precompile "^5.2.1"
@@ -5914,7 +5910,7 @@ glob@^5.0.10:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.4, glob@^7.0.5:
+glob@^7.0.4:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -7596,10 +7592,6 @@ minimatch@4.2.1:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
-
 minimist@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.2.1.tgz#827ba4e7593464e7c221e8c5bed930904ee2c455"
@@ -7647,13 +7639,7 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp@^0.5.0, mkdirp@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
-  dependencies:
-    minimist "0.0.8"
-
-mkdirp@^0.5.3, mkdirp@^0.5.5:
+mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.5:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.6.tgz#7def03d2432dcae4ba1d611445c48396062255f6"
   integrity sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==
@@ -9095,13 +9081,7 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rimraf@^2.2.8, rimraf@^2.3.4, rimraf@^2.4.3, rimraf@^2.4.4, rimraf@^2.5.3, rimraf@^2.5.4, rimraf@^2.6.1:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
-  dependencies:
-    glob "^7.0.5"
-
-rimraf@^2.6.2, rimraf@^2.6.3:
+rimraf@^2.2.8, rimraf@^2.3.4, rimraf@^2.4.3, rimraf@^2.4.4, rimraf@^2.5.3, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@^2.6.3:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
@@ -9932,11 +9912,7 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-symlink-or-copy@^1.0.0, symlink-or-copy@^1.0.1, symlink-or-copy@^1.1.8:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/symlink-or-copy/-/symlink-or-copy-1.2.0.tgz#5d49108e2ab824a34069b68974486c290020b393"
-
-symlink-or-copy@^1.2.0, symlink-or-copy@^1.3.1:
+symlink-or-copy@^1.0.0, symlink-or-copy@^1.0.1, symlink-or-copy@^1.1.8, symlink-or-copy@^1.2.0, symlink-or-copy@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/symlink-or-copy/-/symlink-or-copy-1.3.1.tgz#9506dd64d8e98fa21dcbf4018d1eab23e77f71fe"
   integrity sha512-0K91MEXFpBUaywiwSSkmKjnGcasG/rVBXFLJz5DrgGabpYD6N+3yZrfD6uUIfpuTu65DZLHi7N8CizHc07BPZA==
