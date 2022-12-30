@@ -1,5 +1,4 @@
-ember-cli-build-notifications
-==============================================================================
+# ember-cli-build-notifications
 
 [![npm version](https://badge.fury.io/js/ember-cli-build-notifications.svg)](https://badge.fury.io/js/ember-cli-build-notifications)
 [![Build Status](https://travis-ci.org/pdud/ember-cli-build-notifications.svg?branch=master)](https://travis-ci.org/pdud/ember-cli-build-notifications)
@@ -10,24 +9,21 @@ This addon adds support for Linux, Mac OS X and Windows alerts when ember-cli ha
 ![image](example.png)
 ![image](build_success_example.png)
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
-* Ember.js v3.24 or above
-* Ember CLI v3.24 or above
-* Node.js v12 or above
+* Ember.js v3.28 or above
+* Ember CLI v3.28 or above
+* Node.js v14 or above
 
 
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```
 ember install ember-cli-build-notifications
 ```
 
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 | Config Options | Ember CLI Build Event | Default |
 | -------------- |:----------------------|:-------:|
@@ -64,37 +60,16 @@ The `notificationOptions` settings are passed directly into node-notifier, see t
 
 Powered by [mikaelbr/node-notifier](https://github.com/mikaelbr/node-notifier) and it's [dependencies](https://github.com/mikaelbr/node-notifier#thanks-to-oss).
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
+
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
-### Installation
-
-* `git clone <repository-url>`
-* `cd ember-cli-build-notifications`
-* `yarn install`
-
-### Running tests
-
-* `npm run nodetest`
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
-
-### Running the dummy application
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
-
-Acknowledgment
-------------------------------------------------------------------------------
+## Acknowledgment
 
 * Made possible by: [https://github.com/ember-cli/ember-cli/pull/2832](https://github.com/ember-cli/ember-cli/pull/2832)
 * Inspired by: [https://github.com/dylang/grunt-notify](https://github.com/dylang/grunt-notify)
 * Mocha setup from: [https://github.com/rwjblue/ember-cli-divshot](https://github.com/rwjblue/ember-cli-divshot)
 
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
