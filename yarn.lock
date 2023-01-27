@@ -4601,9 +4601,9 @@ eslint-formatter-kakoune@^1.0.0:
   integrity sha512-Uk/TVLt6Nf6Xoz7C1iYuZjOSdJxe5aaauGRke8JhKeJwD66Y61/pY2FjtLP04Ooq9PwV34bzrkKkU2UZ5FtDRA==
 
 eslint-plugin-ember@^11.2.1:
-  version "11.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-11.3.1.tgz#c8ead5ebe12561c840c58a997bb6131811cde94a"
-  integrity sha512-ei5oa4F5/nC4EC3x0UGad8/EHJrBeODWVW41l2SzTcN58xulFAnWRoJ8o1m47n+AXYRbi5CqA3fwXi9teija1Q==
+  version "11.4.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-11.4.4.tgz#b4388a5245c9c2b27bd29456938046bf8d0ffc26"
+  integrity sha512-LhfXdyNQq3wbL0+EIobEpvXrqwId0m1qXT2rRuSzmtwyeUx+RZVVtxV0xwVpTurIjgFnQ+niCF61eZgW30gOgg==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     "@glimmer/syntax" "^0.84.2"
@@ -4612,6 +4612,7 @@ eslint-plugin-ember@^11.2.1:
     ember-template-imports "^3.1.1"
     eslint-utils "^3.0.0"
     estraverse "^5.2.0"
+    lodash.camelcase "^4.1.1"
     lodash.kebabcase "^4.1.1"
     magic-string "^0.27.0"
     requireindex "^1.2.0"
@@ -6752,6 +6753,11 @@ lodash.assign@^3.2.0:
 lodash.assignin@^4.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assignin/-/lodash.assignin-4.2.0.tgz#ba8df5fb841eb0a3e8044232b0e263a8dc6a28a2"
+
+lodash.camelcase@^4.1.1:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==
 
 lodash.castarray@^4.4.0:
   version "4.4.0"
