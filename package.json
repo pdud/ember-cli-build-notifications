@@ -27,7 +27,6 @@
     "test:node": "mocha node-tests --recursive --timeout 5000"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.26.11",
     "heimdalljs-graph": "^1.0.0",
     "node-notifier": "^10.0.0",
     "ember-cli-htmlbars": "^6.1.1"
@@ -44,6 +43,7 @@
     "concurrently": "^7.6.0",
     "ember-auto-import": "^2.5.0",
     "ember-cli": "~4.10.0",
+    "ember-cli-babel": "^7.26.11",
     "ember-cli-dependency-checker": "^3.3.1",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
